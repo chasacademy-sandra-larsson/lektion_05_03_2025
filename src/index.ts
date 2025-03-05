@@ -16,6 +16,7 @@ app.use(express.json());
 
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes )
+// TODO: app.use("/comments", commentRoutes )
 
 
 app.listen(PORT, () => {

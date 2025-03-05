@@ -7,9 +7,9 @@ const router = express.Router();
 // CRUD för en resurs posts
 router.post("/", createPostByUser);
 router.get("/", getPostsByUser);
-router.get("/:id", getPostByUser);
-router.put("/:id", updatePostByUser);
-router.delete("/:id", deletePostByUser);
+router.get("/:postId", getPostByUser);
+router.put("/:postId", updatePostByUser);
+router.delete("/:postId", deletePostByUser);
 
 export default router;
 
