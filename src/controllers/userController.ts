@@ -11,14 +11,17 @@ export const createUser = async (req: Request, res: Response) => {
     // TODO: No user duplicate?
 
     try {
-        const result = await query<User[]>(
-            "INSERT INTO users (username, password) VALUES (?, ?)",
-            [username, password]
-        );
+        // const result = await query<User[]>(
+        //     "INSERT INTO users (username, password) VALUES (?, ?)",
+        //     [username, password]
+        // );
 
-        // TODO: Kolla på result.affectedRows om den är true
+        // // TODO: Kolla på result.affectedRows om den är true
 
-        res.status(201).json({message: "User created successfully"});
+        // res.status(201).json({message: "User created successfully"});
+
+        // TODO: Write CRUD with prisma
+        // https://www.prisma.io/docs/orm/prisma-client/queries/crud
 
     } catch(error) {
 
